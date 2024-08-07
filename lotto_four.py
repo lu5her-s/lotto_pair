@@ -22,7 +22,10 @@ while True:
 
     # sum of 3 digit
     three_digit_sum = 0
-    for i in three_digit_list:
+    # for i in three_digit_list:
+    #     three_digit_sum += int(i)
+    all_list = three_digit_list + two_digit_list
+    for i in all_list:
         three_digit_sum += int(i)
     # print sum of 3 digit
     # print("Sum of 3 digit:", three_digit_sum)
@@ -47,8 +50,9 @@ while True:
     print("=" * 23)
     print("Lotto Calculator by 0x4c")
     print("=" * 23)
-
-    print("\n\n", three_digit, two_digit, "==", four_digit)
+    print("Sum : ", three_digit_sum)
+    print("-" * 23)
+    print(three_digit, two_digit, "==", four_digit)
     print("=" * 23)
 
     user_input = input("\nDo you want to exit? (y/n) : ")
